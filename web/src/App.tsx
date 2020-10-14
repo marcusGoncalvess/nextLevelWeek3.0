@@ -1,10 +1,16 @@
 import React from 'react';
 
+import Landing from './pages/Landing';
+
+import GlobalStyle from './styles/global';
+
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <Landing />
+
+      <GlobalStyle />
+    </>
   );
 };
 

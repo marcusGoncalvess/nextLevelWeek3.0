@@ -29,13 +29,13 @@
         "prettier"
     ],
     "rules": {
-      "camelcase": "off",
-      "react/jsx-props-no-spreading": "off",
-      "react/prop-types": "off",
+      "camelcase": "warn",
+      "react/jsx-props-no-spreading": "warn",
+      "react/prop-types": "warn",
       "prettier/prettier": "error",
       "react-hooks/rules-of-hooks": "error",
-      "react/jsx-one-expression-per-line": "off",
-      "no-unused-expressions": "off",
+      "react/jsx-one-expression-per-line": "warn",
+      "no-unused-expressions": "warn",
       "react-hooks/exhaustive-deps": "warn",
       "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
       "import/prefer-default-export": "off",
