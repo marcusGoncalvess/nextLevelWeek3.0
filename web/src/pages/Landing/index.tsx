@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Location, Content } from './styles';
+import { Container, Location, Content, EnterButton } from './styles';
 
 import logoImg from '../../images/logo.svg';
 import { ReactComponent as ArrowImg } from '../../images/arrow.svg';
@@ -20,9 +20,9 @@ const Landing: React.FC = () => {
           <span>Rio Grande do Sul</span>
         </Location>
 
-        <a href="/ere">
+        <EnterButton to="/app">
           <ArrowImg />
-        </a>
+        </EnterButton>
       </Content>
     </Container>
   );

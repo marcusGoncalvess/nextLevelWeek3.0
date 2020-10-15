@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { Link } from 'react-router-dom';
+
 import backgroundImg from '../../images/landing.svg';
 
 export const Container = styled.div`
@@ -42,31 +44,6 @@ export const Content = styled.div`
       line-height: 34px;
     }
   }
-
-  > a {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-
-    width: 80px;
-    height: 80px;
-    background-color: #ffd666;
-    border-radius: 30px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-
-    &:hover {
-      background-color: #96feff;
-
-      svg path {
-        stroke: #15c3d6;
-        transition: 0.3s;
-      }
-    }
-  }
 `;
 
 export const Location = styled.div`
@@ -82,5 +59,30 @@ export const Location = styled.div`
   line-height: 32px;
   strong {
     font-weight: 800;
+  }
+`;
+
+export const EnterButton = styled(Link)`
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 80px;
+  height: 80px;
+  background-color: #ffd666;
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #96feff;
+
+    svg path {
+      stroke: #15c3d6;
+      transition: 0.3s;
+    }
   }
 `;
