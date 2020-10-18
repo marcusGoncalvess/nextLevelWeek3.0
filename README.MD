@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./web/src/images/logo.svg" alt="Happy" />
+  <img src="./web/src/images/logo-black.svg" alt="Happy" />
 </p>
 
 <h1 name="sobre">ℹ Sobre o Projeto</h1>
