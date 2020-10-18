@@ -1,11 +1,20 @@
 import React from 'react';
-import { Map, TileLayer } from 'react-leaflet';
+import { TileLayer, Marker, Popup } from 'react-leaflet';
+import Leaflet from 'leaflet';
 
 import 'leaflet/dist/leaflet.css';
 
 import { FiPlus } from 'react-icons/fi';
 import mapMarkerImg from '../../images/map-marker.svg';
-import { Container, EnterButton } from './styles';
+import { ReactComponent as ArrowImg } from '../../images/arrow.svg';
+import { Container, EnterButton, MapStyled, OrphanageLink } from './styles';
+
+const mapIcon = Leaflet.icon({
+  iconUrl: mapMarkerImg,
+  iconSize: [35, 60],
+  iconAnchor: [16.5, 60],
+  popupAnchor: [170, 2],
+});
 
 const OrphanagesMap: React.FC = () => {
   return (
@@ -23,7 +32,7 @@ const OrphanagesMap: React.FC = () => {
         </footer>
       </aside>
 
-      <Map
+      <MapStyled
         center={[-30.0418326, -51.1870186]}
         zoom={13}
         style={{ width: '100%', height: '100%' }}
@@ -31,8 +40,20 @@ const OrphanagesMap: React.FC = () => {
         <TileLayer
           url={`https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
         />
-        {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}
-      </Map>
+        <Marker icon={mapIcon} position={[-30.0418326, -51.1870186]}>
+          <Popup
+            className="map-popup"
+            minWidth={240}
+            maxWidth={240}
+            closeButton={false}
+          >
+            Lar das meninas
+            <OrphanageLink to="/">
+              <ArrowImg />
+            </OrphanageLink>
+          </Popup>
+        </Marker>
+      </MapStyled>
 
       <EnterButton to="/">
         <FiPlus size={32} color="#FFF" />
