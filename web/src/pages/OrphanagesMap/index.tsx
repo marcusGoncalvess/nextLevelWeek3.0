@@ -1,20 +1,13 @@
 import React from 'react';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
-import Leaflet from 'leaflet';
-
 import 'leaflet/dist/leaflet.css';
-
 import { FiPlus } from 'react-icons/fi';
+
 import mapMarkerImg from '../../images/map-marker.svg';
 import { ReactComponent as ArrowImg } from '../../images/arrow.svg';
-import { Container, EnterButton, MapContainer, OrphanageLink } from './styles';
+import mapIcon from '../../utils/mapIcon';
 
-const mapIcon = Leaflet.icon({
-  iconUrl: mapMarkerImg,
-  iconSize: [35, 60],
-  iconAnchor: [16.5, 60],
-  popupAnchor: [170, 2],
-});
+import { Container, EnterButton, MapContainer, OrphanageLink } from './styles';
 
 const OrphanagesMap: React.FC = () => {
   return (
