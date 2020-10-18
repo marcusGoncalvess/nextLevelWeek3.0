@@ -6,6 +6,8 @@
 Projeto Happy foi construido durante esta semana do dia 12 a 18 de outubro de 2020 na Next Level Week. <br>
 Happy é um projeto em homenagem ao dia das crianças onde nele é possível ver os orfanatos na sua cidade e criar agendar horarios para visitas. (As crianças adoram visitas) 🧒❤ <br>
 
+<img src=".github/happy.png">
+
 # :pushpin: Tabela de conteúdos
 <!--ts-->
    * [Sobre](#sobre)
