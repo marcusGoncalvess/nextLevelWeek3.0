@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Map } from 'react-leaflet';
 
 export const Container = styled.div`
   width: 100vw;
@@ -67,7 +66,14 @@ export const EnterButton = styled(Link)`
   }
 `;
 
-export const MapStyled = styled(Map)`
+export const MapContainer = styled.div`
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  > div {
+    height: 100%;
+  }
+
   .map-popup {
     .leaflet-popup-content-wrapper {
       background: rgba(255, 255, 255, 0.8);
