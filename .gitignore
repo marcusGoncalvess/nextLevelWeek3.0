@@ -24,3 +24,13 @@ yarn-error.log*
 
 backend/uploads/*
 backend/!uploads/.gitkeep
+
+.expo/*
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
