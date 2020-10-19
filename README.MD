@@ -37,9 +37,8 @@ A Rocketseat tem a consciência que a prática é a melhor aula, então sempre n
 
 <h1 name="preview">:eyes: Preview do Projeto</h1>
 <h3>Web</h3>
-Em breve!
-<h3>App Mobile (IOS & Android)</h3>
-Em breve!
+<img src=".github/web.gif">
+
 <h1 name="run">:construction_worker: Como rodar o projeto</h1> <br>
 
 ```bash
