@@ -29,7 +29,7 @@
         "prettier"
     ],
     "rules": {
-      "camelcase": "warn",
+      "camelcase": "off",
       "react/jsx-props-no-spreading": "warn",
       "react/prop-types": "warn",
       "prettier/prettier": "error",
